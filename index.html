@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web制作ポートフォリオ | Kojima Yuya</title>
+  <meta name="description" content="ホームページ制作のポートフォリオ。デザイン・コーディング・コピーライティングまで一気通貫で対応します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <span class="header__logo-en">Kojima Yuya</span>
+        <span class="header__logo-ja">Web制作</span>
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact" class="header__nav-cta">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Design × Code × Copy</p>
+      <h1 class="hero__title">
+        伝えたいことを、<br>
+        きちんと<em>伝わる形</em>に。
+      </h1>
+      <p class="hero__desc">
+        デザイン・コーディング・コピーライティングまで一気通貫で対応。<br>
+        あなたのビジネスの価値を引き出すWebサイトをつくります。
+      </p>
+      <div class="hero__actions">
+        <a href="#works" class="btn btn--primary">制作実績を見る</a>
+        <a href="#contact" class="btn btn--ghost">ご相談・お見積り</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== WORKS ==================== -->
+  <section class="section works" id="works">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Works</p>
+        <h2 class="section__title">制作実績</h2>
+        <p class="section__desc">業種の異なる2つのサイトをサンプルとしてご覧いただけます。</p>
+      </div>
+
+      <div class="works__grid">
+
+        <!-- Work 1: Cafe -->
+        <article class="work-card" id="work-cafe">
+          <div class="work-card__visual">
+            <a href="../sample_cafe_hp/index.html" target="_blank" class="work-card__link">
+              <img
+                src="../sample_cafe_hp/assets/images/hero.png"
+                alt="Cafe de terminal トップページ"
+                class="work-card__img"
+                loading="lazy"
+              >
+              <div class="work-card__overlay">
+                <span class="work-card__overlay-text">サイトを見る →</span>
+              </div>
+            </a>
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__tags">
+              <span class="tag tag--blue">飲食・カフェ</span>
+              <span class="tag tag--gray">LP / コーポレート</span>
+            </div>
+            <h3 class="work-card__title">Cafe de terminal</h3>
+            <p class="work-card__desc">
+              スイーツとコーヒーにこだわる架空カフェのブランドサイト。
+              「ちょっと寄り道」という世界観を、落ち着いたトーンのデザインと
+              こだわりの写真配置で表現しました。メニューページ・お知らせ機能も実装。
+            </p>
+            <ul class="work-card__skills">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>レスポンシブ対応</li>
+              <li>アニメーション演出</li>
+            </ul>
+            <a href="../sample_cafe_hp/index.html" target="_blank" class="work-card__cta">
+              サイトを確認する
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Work 2: またはり -->
+        <article class="work-card" id="work-matahari">
+          <div class="work-card__visual">
+            <a href="../../15_Sandbox/Prototype/またはりHP(Claude Design)/index.html" target="_blank" class="work-card__link">
+              <img
+                src="../../15_Sandbox/Prototype/またはりHP(Claude Design)/uploads/photos/hero-main.jpg"
+                alt="訪問看護ステーション またはり トップページ"
+                class="work-card__img"
+                loading="lazy"
+              >
+              <div class="work-card__overlay">
+                <span class="work-card__overlay-text">サイトを見る →</span>
+              </div>
+            </a>
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__tags">
+              <span class="tag tag--green">医療・介護</span>
+              <span class="tag tag--gray">多ページサイト</span>
+            </div>
+            <h3 class="work-card__title">訪問看護ステーション またはり</h3>
+            <p class="work-card__desc">
+              「第2の家族のような温かな訪問看護」をコンセプトにした訪問看護ステーションのWebサイト。
+              スタッフ紹介・サービス・ご利用案内・お問い合わせを含む5ページ構成。
+              施設の温かみと信頼感が伝わるビジュアルとコピーに仕上げました。
+            </p>
+            <ul class="work-card__skills">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>多ページ構成</li>
+              <li>コピーライティング</li>
+            </ul>
+            <a href="../../15_Sandbox/Prototype/またはりHP(Claude Design)/index.html" target="_blank" class="work-card__cta">
+              サイトを確認する
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES ==================== -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Why Choose</p>
+        <h2 class="section__title">選ばれる3つの理由</h2>
+        <p class="section__desc">「頼んでよかった」と思っていただけるよう、制作体制と進め方にこだわっています。</p>
+      </div>
+      <div class="features__grid">
+
+        <div class="feature-card">
+          <div class="feature-card__icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="feature-card__title">デザイン・コード・コピー、<br>全部ひとりで完結</h3>
+          <p class="feature-card__desc">
+            デザイナー・エンジニア・ライターに別々に発注すると、認識のズレや伝言ゲームが起きがちです。
+            企画から言葉・デザイン・コーディングまで一人が担うことで、
+            <strong>「なんか違う」が起きにくい</strong>スムーズな制作を実現します。
+          </p>
+          <div class="feature-card__badge">窓口ひとつで完結</div>
+        </div>
+
+        <div class="feature-card feature-card--accent">
+          <div class="feature-card__icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3 class="feature-card__title">文章（コピー）の<br>準備は不要です</h3>
+          <p class="feature-card__desc">
+            「何を書けばいいかわからない」という方がほとんどです。
+            ヒアリングをもとに、キャッチコピーから各ページの本文まで
+            <strong>伝わる言葉はこちらで全て用意</strong>します。
+            素材（写真・テキスト）を揃える手間を大幅に省けます。
+          </p>
+          <div class="feature-card__badge">コピーも込みで依頼OK</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="feature-card__title">公開後も気軽に<br>相談・修正できる</h3>
+          <p class="feature-card__desc">
+            サイトを公開して終わりではありません。
+            「文字を直したい」「ページを追加したい」「使い方がわからない」など、
+            <strong>納品後の相談もすぐ対応</strong>します。
+            長く安心して使えるサポート体制を整えています。
+          </p>
+          <div class="feature-card__badge">納品後サポートあり</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section about" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <div class="section__header section__header--left">
+          <p class="section__label">About</p>
+          <h2 class="section__title">デザインと<br>コードで伝える</h2>
+        </div>
+        <p class="about__lead">
+          ビジネスの価値を、正確に・美しく・伝わる形でWebに落とし込む。それが私の仕事です。
+        </p>
+        <p class="about__body">
+          企画段階からコピーライティング、デザイン、コーディング、公開後のサポートまで一気通貫で対応します。
+          業種を問わず、そのクライアントが持つ独自の強みを引き出すサイトをつくります。
+        </p>
+        <div class="about__skills">
+          <div class="skill-item">
+            <span class="skill-item__icon">💻</span>
+            <div>
+              <p class="skill-item__title">フロントエンド開発</p>
+              <p class="skill-item__desc">HTML / CSS / JavaScript</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item__icon">🎨</span>
+            <div>
+              <p class="skill-item__title">Webデザイン</p>
+              <p class="skill-item__desc">ブランドに合ったビジュアル設計</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item__icon">✏️</span>
+            <div>
+              <p class="skill-item__title">コピーライティング</p>
+              <p class="skill-item__desc">読まれる・伝わる言葉を書く</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__visual">
+        <div class="about__card">
+          <p class="about__card-label">対応業種</p>
+          <ul class="about__card-list">
+            <li>飲食・カフェ・サービス業</li>
+            <li>医療・介護・福祉施設</li>
+            <li>士業・コンサルタント</li>
+            <li>スモールビジネス全般</li>
+            <li>個人事業主・フリーランス</li>
+          </ul>
+          <div class="about__card-divider"></div>
+          <p class="about__card-label">対応範囲</p>
+          <ul class="about__card-list">
+            <li>企画・設計</li>
+            <li>デザイン・コーディング</li>
+            <li>コピーライティング</li>
+            <li>公開後サポート</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICE ==================== -->
+  <section class="section service" id="service">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Service</p>
+        <h2 class="section__title">提供サービス</h2>
+      </div>
+      <div class="service__grid">
+
+        <div class="service-card">
+          <div class="service-card__num">01</div>
+          <h3 class="service-card__title">ホームページ制作</h3>
+          <p class="service-card__desc">
+            採用・集客に強いWebサイトを制作します。業種・規模を問わず対応。
+            ページ数・ご要件に応じてお見積りします。
+          </p>
+          <ul class="service-card__list">
+            <li>コーポレートサイト</li>
+            <li>採用・集客LP</li>
+            <li>多ページサイト</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--accent">
+          <div class="service-card__num">02</div>
+          <h3 class="service-card__title">AI・業務自動化支援</h3>
+          <p class="service-card__desc">
+            繰り返し作業や書類業務をAIで効率化。
+            業務フローを整理した上で、実際に使えるツールを提案・導入します。
+          </p>
+          <ul class="service-card__list">
+            <li>書類・報告書作成の自動化</li>
+            <li>シフト・スケジュール管理</li>
+            <li>各種ペーパーレス化対応</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__num">03</div>
+          <h3 class="service-card__title">外部DX部長（月額）</h3>
+          <p class="service-card__desc">
+            IT・AI活用を「外部DX部長」として継続的に伴走支援。
+            単発ではなく、施設の成長に合わせて長期でサポートします。
+          </p>
+          <ul class="service-card__list">
+            <li>DX戦略の立案</li>
+            <li>ツール選定・導入</li>
+            <li>スタッフ研修</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <div class="section__header">
+        <p class="section__label">Contact</p>
+        <h2 class="section__title">お気軽にご相談ください</h2>
+        <p class="section__desc">
+          「こんなサイトが欲しい」「何から始めればいいかわからない」<br>
+          そんな段階からでも大丈夫です。まずはお気軽にどうぞ。
+        </p>
+      </div>
+      <div class="contact__actions">
+        <a href="https://coconala.com/services/4170805" target="_blank" class="btn btn--primary btn--lg">
+          ココナラで相談する
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+      <p class="contact__note">※ ご要望のヒアリングから対応しています。まずはメッセージをお送りください。</p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">Kojima Yuya — Web Designer / Front-end Developer</p>
+      <p class="footer__copy">&copy; 2026 Kojima Yuya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
