@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web制作ポートフォリオ | Kojima Yuya</title>
-  <meta name="description" content="ホームページ制作のポートフォリオ。デザイン・コーディング・コピーライティングまで一気通貫で対応します。">
+  <title>Web制作・AI導入支援 | Kojima Yuya</title>
+  <meta name="description" content="ホームページ制作からAI・DX導入支援まで。デザイン・コーディング・コピーライティング・業務自動化を一気通貫で対応します。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
@@ -15,15 +15,16 @@
   <!-- ==================== HEADER ==================== -->
   <header class="header" id="header">
     <div class="header__inner">
-      <a href="#" class="header__logo">
+      <a href="index.html" class="header__logo">
         <span class="header__logo-en">Kojima Yuya</span>
-        <span class="header__logo-ja">Web制作</span>
+        <span class="header__logo-ja">Web制作 / AI導入支援</span>
       </a>
       <nav class="header__nav" id="nav">
         <ul class="header__nav-list">
           <li><a href="#works">Works</a></li>
+          <li><a href="#service">HP制作</a></li>
+          <li><a href="ai-support.html">DX・AI導入支援</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#service">Service</a></li>
           <li><a href="#contact" class="header__nav-cta">お問い合わせ</a></li>
         </ul>
       </nav>
@@ -37,18 +38,56 @@
   <section class="hero">
     <div class="hero__bg"></div>
     <div class="hero__content">
-      <p class="hero__eyebrow">Design × Code × Copy</p>
+      <p class="hero__eyebrow">Web Design × DX · AI Innovation</p>
       <h1 class="hero__title">
-        伝えたいことを、<br>
-        きちんと<em>伝わる形</em>に。
+        デザインで魅せて、<br>
+        AIで<em>加速する</em>。
       </h1>
       <p class="hero__desc">
-        デザイン・コーディング・コピーライティングまで一気通貫で対応。<br>
-        あなたのビジネスの価値を引き出すWebサイトをつくります。
+        ホームページ制作からAI・DX導入支援まで。<br>
+        2つの専門領域で、あなたのビジネスの成長をトータルサポートします。
       </p>
-      <div class="hero__actions">
-        <a href="#works" class="btn btn--primary">制作実績を見る</a>
-        <a href="#contact" class="btn btn--ghost">ご相談・お見積り</a>
+
+      <div class="hero__services">
+
+        <a href="#service" class="hero__service-card hero__service-card--web">
+          <div class="hero__service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <polyline points="8 21 12 17 16 21"/>
+              <line x1="8" y1="17" x2="16" y2="17"/>
+            </svg>
+          </div>
+          <div class="hero__service-label">HP制作</div>
+          <p class="hero__service-desc">
+            デザイン・コーディング・コピーライティングまで一気通貫。
+            クリエイティブで「伝わる」Webサイトを制作します。
+          </p>
+          <span class="hero__service-link">
+            実績・サービスを見る
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+
+        <a href="ai-support.html" class="hero__service-card hero__service-card--ai">
+          <div class="hero__service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+              <circle cx="9" cy="14" r="1" fill="currentColor" stroke="none"/>
+              <circle cx="15" cy="14" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div class="hero__service-label">DX・AI導入支援</div>
+          <p class="hero__service-desc">
+            ChatGPT活用から業務自動化ツール制作まで。
+            現場に合わせたAI導入で、業務効率を大幅に改善します。
+          </p>
+          <span class="hero__service-link">
+            AI支援の詳細を見る
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </span>
+        </a>
+
       </div>
     </div>
     <div class="hero__scroll">
@@ -211,14 +250,15 @@
       <div class="about__text">
         <div class="section__header section__header--left">
           <p class="section__label">About</p>
-          <h2 class="section__title">デザインと<br>コードで伝える</h2>
+          <h2 class="section__title">デザインと<br>テクノロジーで伝える</h2>
         </div>
         <p class="about__lead">
           ビジネスの価値を、正確に・美しく・伝わる形でWebに落とし込む。それが私の仕事です。
         </p>
         <p class="about__body">
           企画段階からコピーライティング、デザイン、コーディング、公開後のサポートまで一気通貫で対応します。
-          業種を問わず、そのクライアントが持つ独自の強みを引き出すサイトをつくります。
+          さらにAI・DX導入支援により、業務効率化・自動化も実現。
+          業種を問わず、そのクライアントが持つ独自の強みを引き出す形でサポートします。
         </p>
         <div class="about__skills">
           <div class="skill-item">
@@ -236,10 +276,10 @@
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-item__icon">✏️</span>
+            <span class="skill-item__icon">🤖</span>
             <div>
-              <p class="skill-item__title">コピーライティング</p>
-              <p class="skill-item__desc">読まれる・伝わる言葉を書く</p>
+              <p class="skill-item__title">AI・業務自動化</p>
+              <p class="skill-item__desc">ChatGPT活用 / ツール制作 / DX推進</p>
             </div>
           </div>
         </div>
@@ -260,6 +300,7 @@
             <li>企画・設計</li>
             <li>デザイン・コーディング</li>
             <li>コピーライティング</li>
+            <li>AI・DX導入支援</li>
             <li>公開後サポート</li>
           </ul>
         </div>
@@ -273,10 +314,11 @@
       <div class="section__header">
         <p class="section__label">Service</p>
         <h2 class="section__title">提供サービス</h2>
+        <p class="section__desc">HP制作・AI導入支援の2軸で、ビジネスの課題を解決します。</p>
       </div>
       <div class="service__grid">
 
-        <div class="service-card">
+        <div class="service-card service-card--accent">
           <div class="service-card__num">01</div>
           <h3 class="service-card__title">ホームページ制作</h3>
           <p class="service-card__desc">
@@ -290,18 +332,21 @@
           </ul>
         </div>
 
-        <div class="service-card service-card--accent">
+        <div class="service-card service-card--green">
           <div class="service-card__num">02</div>
-          <h3 class="service-card__title">AI・業務自動化支援</h3>
+          <h3 class="service-card__title">DX・AI導入支援</h3>
           <p class="service-card__desc">
             繰り返し作業や書類業務をAIで効率化。
             業務フローを整理した上で、実際に使えるツールを提案・導入します。
           </p>
           <ul class="service-card__list">
-            <li>書類・報告書作成の自動化</li>
-            <li>シフト・スケジュール管理</li>
-            <li>各種ペーパーレス化対応</li>
+            <li>ChatGPT活用コンサルティング</li>
+            <li>業務自動化ツール制作</li>
+            <li>外部DX部長（月額）</li>
           </ul>
+          <a href="ai-support.html" class="service-card__more">
+            詳細ページを見る →
+          </a>
         </div>
 
         <div class="service-card">
@@ -346,7 +391,14 @@
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="footer__name">Kojima Yuya — Web Designer / Front-end Developer</p>
+      <div>
+        <p class="footer__name">Kojima Yuya — Web Designer / Front-end Developer / AI Consultant</p>
+        <div class="footer__links">
+          <a href="index.html">HP制作</a>
+          <span>|</span>
+          <a href="ai-support.html">DX・AI導入支援</a>
+        </div>
+      </div>
       <p class="footer__copy">&copy; 2026 Kojima Yuya. All rights reserved.</p>
     </div>
   </footer>
