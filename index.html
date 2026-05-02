@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web制作・AI導入支援 | Kojima Yuya</title>
-  <meta name="description" content="ホームページ制作からAI・DX導入支援まで。デザイン・コーディング・コピーライティング・業務自動化を一気通貫で対応します。">
+  <title>Kojima Work — Web制作・AI導入支援</title>
+  <meta name="description" content="中小企業・個人事業主のビジネス成長を、HP制作からAI導入支援まで一気通貫でサポート。デザイン・コーディング・コピーライティング・業務自動化をワンストップで提供します。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
@@ -15,151 +15,384 @@
   <!-- ==================== HEADER ==================== -->
   <header class="header" id="header">
     <div class="header__inner">
-      <a href="index.html" class="header__logo">
-        <span class="header__logo-en">Kojima Yuya</span>
-        <span class="header__logo-ja">Web制作 / AI導入支援</span>
+      <a href="index.html" class="logo">
+        <span class="logo__mark">KW</span>
+        <div class="logo__text">
+          <span class="logo__name">Kojima Work</span>
+          <span class="logo__sub">Web制作 / AI導入支援</span>
+        </div>
       </a>
-      <nav class="header__nav" id="nav">
-        <ul class="header__nav-list">
-          <li><a href="index.html" class="nav--active">Home</a></li>
-          <li><a href="hp-support.html">HP制作</a></li>
-          <li><a href="ai-support.html">DX・AI導入支援</a></li>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
           <li><a href="#about">About</a></li>
-          <li><a href="#contact" class="header__nav-cta">お問い合わせ</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#workflow">ご依頼の流れ</a></li>
+          <li><a href="#works">実績</a></li>
+          <li><a href="#contact" class="nav__cta">お問い合わせ</a></li>
         </ul>
       </nav>
-      <button class="header__hamburger" id="hamburger" aria-label="メニュー">
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <!-- ==================== HERO ==================== -->
-  <section class="hero">
-    <div class="hero__bg"></div>
-    <div class="hero__content">
-      <p class="hero__eyebrow">Web Design × DX · AI Innovation</p>
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="orb orb--blue"></div>
+      <div class="orb orb--violet"></div>
+      <div class="orb orb--cyan"></div>
+    </div>
+    <div class="noise-overlay"></div>
+
+    <div class="hero__inner">
+      <p class="hero__tag">
+        <span class="tag-dot"></span>
+        Web Design × DX · AI Innovation
+      </p>
       <h1 class="hero__title">
-        デザインで魅せて、<br>
-        AIで<em>加速する</em>。
+        ビジネスの課題を<br>
+        <span class="gradient-web">デザイン</span>と<span class="gradient-ai">AI</span>で<br>
+        解決する。
       </h1>
       <p class="hero__desc">
-        ホームページ制作からAI・DX導入支援まで。<br>
-        2つの専門領域で、あなたのビジネスの成長をトータルサポートします。
+        中小企業・個人事業主の「伝わらない」「忙しすぎる」を、<br class="pc-only">
+        Web制作とAI活用で根本から解決します。
       </p>
 
       <div class="hero__services">
-
-        <a href="hp-support.html" class="hero__service-card hero__service-card--web">
-          <div class="hero__service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <a href="hp-support.html" class="hero__svc hero__svc--web">
+          <div class="hero__svc-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
               <rect x="2" y="3" width="20" height="14" rx="2"/>
               <polyline points="8 21 12 17 16 21"/>
               <line x1="8" y1="17" x2="16" y2="17"/>
             </svg>
           </div>
-          <div class="hero__service-label">HP制作</div>
-          <p class="hero__service-desc">
-            デザイン・コーディング・コピーライティングまで一気通貫。
-            クリエイティブで「伝わる」Webサイトを制作します。
-          </p>
-          <span class="hero__service-link">
-            実績・サービスを見る
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </span>
+          <div class="hero__svc-body">
+            <p class="hero__svc-label">Service 01</p>
+            <h3 class="hero__svc-title">HP制作</h3>
+            <p class="hero__svc-desc">デザイン・コーディング・コピーライティング一気通貫</p>
+          </div>
+          <svg class="hero__svc-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+          </svg>
         </a>
 
-        <a href="ai-support.html" class="hero__service-card hero__service-card--ai">
-          <div class="hero__service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <a href="ai-support.html" class="hero__svc hero__svc--ai">
+          <div class="hero__svc-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
               <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
               <circle cx="9" cy="14" r="1" fill="currentColor" stroke="none"/>
               <circle cx="15" cy="14" r="1" fill="currentColor" stroke="none"/>
             </svg>
           </div>
-          <div class="hero__service-label">DX・AI導入支援</div>
-          <p class="hero__service-desc">
-            ChatGPT活用から業務自動化ツール制作まで。
-            現場に合わせたAI導入で、業務効率を大幅に改善します。
-          </p>
-          <span class="hero__service-link">
-            AI支援の詳細を見る
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </span>
+          <div class="hero__svc-body">
+            <p class="hero__svc-label">Service 02</p>
+            <h3 class="hero__svc-title">AI導入支援</h3>
+            <p class="hero__svc-desc">ChatGPT活用から業務自動化・DX推進まで</p>
+          </div>
+          <svg class="hero__svc-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+          </svg>
         </a>
-
       </div>
     </div>
-    <div class="hero__scroll">
+
+    <div class="hero__scroll" aria-hidden="true">
       <span>Scroll</span>
-      <div class="hero__scroll-line"></div>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- ==================== SERVICES OVERVIEW ==================== -->
-  <section class="section services-overview" id="services">
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section about" id="about">
     <div class="container">
-      <div class="section__header">
-        <p class="section__label">Services</p>
-        <h2 class="section__title">提供サービス</h2>
-        <p class="section__desc">HP制作とDX・AI導入支援の2軸で、ビジネスの課題を解決します。</p>
-      </div>
-      <div class="services-overview__grid">
+      <div class="about__inner">
 
-        <!-- HP制作 -->
-        <div class="svc-panel svc-panel--web">
-          <div class="svc-panel__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <div class="about__text fade-up">
+          <p class="section-label">About</p>
+          <h2 class="section-title">ビジネスの価値を、<br>正確に・美しく・伝える</h2>
+          <p class="about__lead">
+            「かっこいいサイトが欲しい」「AIを使いたいけど何から始めれば」——<br>
+            そんな想いを、実績と技術で形にします。
+          </p>
+          <p class="about__body">
+            企画・コピーライティング・デザイン・コーディング・公開後サポートまで一気通貫で対応。
+            AI・DX導入支援により業務効率化・自動化も実現します。
+            業種を問わず、クライアントが持つ独自の強みを引き出すことが私の仕事です。
+          </p>
+          <div class="about__skills">
+            <div class="skill-row">
+              <div class="skill-icon skill-icon--web">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <polyline points="8 21 12 17 16 21"/>
+                </svg>
+              </div>
+              <div>
+                <p class="skill-title">フロントエンド開発</p>
+                <p class="skill-desc">HTML / CSS / JavaScript</p>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-icon skill-icon--design">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                  <circle cx="11" cy="11" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <p class="skill-title">Webデザイン</p>
+                <p class="skill-desc">Figma / ブランドデザイン / UI設計</p>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-icon skill-icon--ai">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="skill-title">AI・業務自動化</p>
+                <p class="skill-desc">ChatGPT / n8n / DX戦略立案</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__visual fade-up">
+          <div class="stats-card">
+            <p class="stats-label">Kojima Yuya</p>
+            <p class="stats-role">Web Designer / Front-end Developer / AI Consultant</p>
+            <div class="stats-divider"></div>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <p class="stat-num">10<span>+</span></p>
+                <p class="stat-label">制作実績</p>
+              </div>
+              <div class="stat-item">
+                <p class="stat-num">2<span>軸</span></p>
+                <p class="stat-label">専門領域</p>
+              </div>
+              <div class="stat-item">
+                <p class="stat-num">1<span>人</span></p>
+                <p class="stat-label">窓口完結</p>
+              </div>
+            </div>
+            <div class="stats-divider"></div>
+            <p class="stats-label">対応業種</p>
+            <div class="industry-tags">
+              <span>飲食・カフェ</span>
+              <span>医療・介護</span>
+              <span>士業</span>
+              <span>スモールビジネス</span>
+              <span>個人事業主</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Services</p>
+        <h2 class="section-title">提供サービス</h2>
+        <p class="section-desc">HP制作とDX・AI導入支援の2軸で、ビジネスの課題を解決します。</p>
+      </div>
+
+      <!-- HP制作 -->
+      <div class="service-block service-block--web fade-up">
+        <div class="service-block__num-badge">Service 01</div>
+        <div class="service-block__header">
+          <div class="service-block__icon service-block__icon--web">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
               <rect x="2" y="3" width="20" height="14" rx="2"/>
               <polyline points="8 21 12 17 16 21"/>
               <line x1="8" y1="17" x2="16" y2="17"/>
             </svg>
           </div>
-          <p class="svc-panel__category">Web Design &amp; Development</p>
-          <h3 class="svc-panel__title">HP制作</h3>
-          <p class="svc-panel__desc">
-            デザイン・コーディング・コピーライティングまで一気通貫で対応。
-            「なんか違う」が起きにくい、窓口ひとつのシームレスな制作体制でお届けします。
-          </p>
-          <ul class="svc-panel__list">
-            <li>コーポレートサイト・多ページ構成</li>
-            <li>採用・集客ランディングページ</li>
-            <li>コピーライティング込みで依頼OK</li>
-            <li>レスポンシブ・アニメーション対応</li>
-            <li>公開後のサポートも安心</li>
-          </ul>
-          <a href="hp-support.html" class="svc-panel__cta">
-            HP制作の詳細を見る
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </a>
+          <h3 class="service-block__title">HP制作</h3>
         </div>
+        <p class="service-block__desc">
+          「なんかかっこいいサイトにしたい」から「集客できるサイトが欲しい」まで。
+          企画・デザイン・コーディング・コピーライティングを一人で担当するから、
+          窓口ひとつでブレなく・スピーディに仕上げます。
+        </p>
+        <div class="service-block__features">
+          <div class="feature-item">
+            <div class="feature-item__icon feature-item__icon--web">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p class="feature-item__title">コーポレートサイト・多ページ構成</p>
+              <p class="feature-item__desc">会社・店舗・サービスの「顔」となるサイトを制作します</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon feature-item__icon--web">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p class="feature-item__title">採用・集客ランディングページ</p>
+              <p class="feature-item__desc">コンバージョンを意識したLP設計とコピーライティング</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon feature-item__icon--web">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p class="feature-item__title">SEO対策・表示速度最適化</p>
+              <p class="feature-item__desc">検索結果に引っかかるサイトを技術的に実現します</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon feature-item__icon--web">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p class="feature-item__title">公開後の保守・運用サポート</p>
+              <p class="feature-item__desc">納品して終わりではなく、長期的な伴走をします</p>
+            </div>
+          </div>
+        </div>
+        <a href="hp-support.html" class="service-block__cta service-block__cta--web">
+          HP制作の詳細・実績を見る
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </a>
+      </div>
 
-        <!-- DX・AI導入支援 -->
-        <div class="svc-panel svc-panel--ai">
-          <div class="svc-panel__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <!-- AI導入支援 -->
+      <div class="service-block service-block--ai fade-up">
+        <div class="service-block__num-badge service-block__num-badge--ai">Service 02</div>
+        <div class="service-block__header">
+          <div class="service-block__icon service-block__icon--ai">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
               <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
               <circle cx="9" cy="14" r="1" fill="currentColor" stroke="none"/>
               <circle cx="15" cy="14" r="1" fill="currentColor" stroke="none"/>
             </svg>
           </div>
-          <p class="svc-panel__category">DX · AI Innovation</p>
-          <h3 class="svc-panel__title">DX・AI導入支援</h3>
-          <p class="svc-panel__desc">
-            ChatGPT活用から業務自動化ツール制作まで、現場の実態に合わせた支援。
-            「導入して終わり」ではなく、定着まで伴走します。
-          </p>
-          <ul class="svc-panel__list">
-            <li>ChatGPT・AI活用コンサルティング</li>
-            <li>業務自動化ツールの制作・設定</li>
-            <li>外部DX部長（月額伴走プラン）</li>
-            <li>スタッフ研修・定着フォロー</li>
-            <li>DX戦略の立案・ツール選定</li>
-          </ul>
-          <a href="ai-support.html" class="svc-panel__cta">
-            AI導入支援の詳細を見る
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-          </a>
+          <h3 class="service-block__title">DX・AI導入支援</h3>
+        </div>
+        <p class="service-block__desc">
+          ChatGPTを試したけど業務に活かせていない、AIを入れたいけど何から始めれば——
+          そんな段階から丁寧にサポート。「導入して終わり」ではなく定着まで伴走します。
+        </p>
+        <div class="service-block__features">
+          <div class="feature-item">
+            <div class="feature-item__icon feature-item__icon--ai">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p class="feature-item__title">ChatGPT・AI活用コンサルティング</p>
+              <p class="feature-item__desc">現状業務の棚卸しからAI活用プランの策定まで</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon feature-item__icon--ai">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p class="feature-item__title">業務自動化ツールの制作・設定</p>
+              <p class="feature-item__desc">繰り返し作業をゼロにするカスタムツールを構築</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon feature-item__icon--ai">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p class="feature-item__title">外部DX部長（月額伴走プラン）</p>
+              <p class="feature-item__desc">月次で課題を整理しながら、継続的にDXを推進</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon feature-item__icon--ai">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p class="feature-item__title">スタッフ研修・定着フォロー</p>
+              <p class="feature-item__desc">現場スタッフへのAIツール研修と運用定着サポート</p>
+            </div>
+          </div>
+        </div>
+        <a href="ai-support.html" class="service-block__cta service-block__cta--ai">
+          AI導入支援の詳細を見る
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== WORKFLOW ==================== -->
+  <section class="section workflow" id="workflow">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Workflow</p>
+        <h2 class="section-title">ご依頼の流れ</h2>
+        <p class="section-desc">初めてのご依頼でも安心。相談から納品まで、丁寧にサポートします。</p>
+      </div>
+      <div class="wf-list">
+
+        <div class="wf-step fade-up">
+          <div class="wf-step__num">01</div>
+          <div class="wf-step__body">
+            <h4 class="wf-step__title">お問い合わせ</h4>
+            <p class="wf-step__desc">フォームやSNSから気軽にご連絡ください。「まだ迷っている」段階でも大歓迎です。</p>
+          </div>
+        </div>
+
+        <div class="wf-connector"></div>
+
+        <div class="wf-step fade-up">
+          <div class="wf-step__num">02</div>
+          <div class="wf-step__body">
+            <h4 class="wf-step__title">ヒアリング</h4>
+            <p class="wf-step__desc">ZoomまたはLINEで現状・課題・ゴールを丁寧にヒアリング。30分〜1時間が目安です。</p>
+          </div>
+        </div>
+
+        <div class="wf-connector"></div>
+
+        <div class="wf-step fade-up">
+          <div class="wf-step__num">03</div>
+          <div class="wf-step__body">
+            <h4 class="wf-step__title">ご提案・お見積もり</h4>
+            <p class="wf-step__desc">ヒアリング内容をもとに方針と費用をご提示。ご納得いただいてから進めます。</p>
+          </div>
+        </div>
+
+        <div class="wf-connector"></div>
+
+        <div class="wf-step fade-up">
+          <div class="wf-step__num">04</div>
+          <div class="wf-step__body">
+            <h4 class="wf-step__title">制作・開発</h4>
+            <p class="wf-step__desc">進捗を随時共有しながら制作。修正は何度でも対応し、置いてけぼりにしません。</p>
+          </div>
+        </div>
+
+        <div class="wf-connector"></div>
+
+        <div class="wf-step fade-up">
+          <div class="wf-step__num wf-step__num--final">05</div>
+          <div class="wf-step__body">
+            <h4 class="wf-step__title">納品・継続サポート</h4>
+            <p class="wf-step__desc">公開後も継続的にサポート。保守・更新・追加施策まで長期的にお付き合いします。</p>
+          </div>
         </div>
 
       </div>
@@ -169,199 +402,212 @@
   <!-- ==================== WORKS ==================== -->
   <section class="section works" id="works">
     <div class="container">
-      <div class="section__header">
-        <p class="section__label">Works</p>
-        <h2 class="section__title">制作実績</h2>
-        <p class="section__desc">業種の異なる2つのサイトをサンプルとしてご覧いただけます。</p>
+      <div class="section-header fade-up">
+        <p class="section-label">Works</p>
+        <h2 class="section-title">制作実績</h2>
+        <p class="section-desc">業種の異なるサンプルサイトをご覧いただけます。</p>
       </div>
 
-      <div class="works__grid">
+      <div class="works-grid">
 
-        <article class="work-card">
-          <div class="work-card__visual">
-            <a href="https://sample-cafe-hp.pages.dev" target="_blank" class="work-card__link">
-              <img
-                src="https://sample-cafe-hp.pages.dev/assets/images/hero.png"
-                alt="Cafe de terminal トップページ"
-                class="work-card__img"
-                loading="lazy"
-              >
-              <div class="work-card__overlay">
-                <span class="work-card__overlay-text">サイトを見る →</span>
-              </div>
-            </a>
-          </div>
+        <article class="work-card fade-up">
+          <a href="https://sample-cafe-hp.pages.dev" target="_blank" rel="noopener noreferrer" class="work-card__visual">
+            <img
+              src="https://sample-cafe-hp.pages.dev/assets/images/hero.png"
+              alt="Cafe de terminal トップページ"
+              loading="lazy"
+            >
+            <div class="work-card__overlay"><span>サイトを見る →</span></div>
+          </a>
           <div class="work-card__body">
             <div class="work-card__tags">
               <span class="tag tag--blue">飲食・カフェ</span>
               <span class="tag tag--gray">LP / コーポレート</span>
             </div>
             <h3 class="work-card__title">Cafe de terminal</h3>
-            <p class="work-card__desc">
-              スイーツとコーヒーにこだわる架空カフェのブランドサイト。
-              「ちょっと寄り道」という世界観を、落ち着いたトーンのデザインと
-              こだわりの写真配置で表現しました。
-            </p>
-            <ul class="work-card__skills">
-              <li>HTML / CSS</li>
-              <li>JavaScript</li>
-              <li>レスポンシブ対応</li>
-              <li>アニメーション演出</li>
+            <p class="work-card__desc">スイーツとコーヒーにこだわる架空カフェのブランドサイト。落ち着いたトーンで世界観を表現。</p>
+            <ul class="work-card__tech">
+              <li>HTML / CSS</li><li>JavaScript</li><li>レスポンシブ対応</li>
             </ul>
-            <a href="https://sample-cafe-hp.pages.dev" target="_blank" class="work-card__cta">
+            <a href="https://sample-cafe-hp.pages.dev" target="_blank" rel="noopener noreferrer" class="work-card__link">
               サイトを確認する
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+              </svg>
             </a>
           </div>
         </article>
 
-        <article class="work-card">
-          <div class="work-card__visual">
-            <a href="https://tsukinowa-hp.pages.dev" target="_blank" class="work-card__link">
-              <img
-                src="assets/images/tsukinowa-kv.png"
-                alt="訪問看護ステーション月の輪 トップページ"
-                class="work-card__img"
-                loading="lazy"
-              >
-              <div class="work-card__overlay">
-                <span class="work-card__overlay-text">サイトを見る →</span>
-              </div>
-            </a>
-          </div>
+        <article class="work-card fade-up">
+          <a href="https://tsukinowa-hp.pages.dev" target="_blank" rel="noopener noreferrer" class="work-card__visual">
+            <img
+              src="assets/images/tsukinowa-kv.png"
+              alt="訪問看護ステーション月の輪 トップページ"
+              loading="lazy"
+            >
+            <div class="work-card__overlay"><span>サイトを見る →</span></div>
+          </a>
           <div class="work-card__body">
             <div class="work-card__tags">
               <span class="tag tag--green">医療・介護</span>
-              <span class="tag tag--gray">多ページサイト</span>
+              <span class="tag tag--gray">多ページ構成</span>
             </div>
             <h3 class="work-card__title">訪問看護ステーション月の輪</h3>
-            <p class="work-card__desc">
-              「第2の家族のような温かな訪問看護」をコンセプトにした訪問看護ステーションのWebサイト。
-              スタッフ紹介・サービス・ご利用案内など5ページ構成。
-            </p>
-            <ul class="work-card__skills">
-              <li>HTML / CSS</li>
-              <li>JavaScript</li>
-              <li>多ページ構成</li>
-              <li>コピーライティング</li>
+            <p class="work-card__desc">温かな訪問看護をコンセプトに、5ページ構成のサイト。コピーライティングも担当。</p>
+            <ul class="work-card__tech">
+              <li>HTML / CSS</li><li>JavaScript</li><li>コピーライティング</li>
             </ul>
-            <a href="https://tsukinowa-hp.pages.dev" target="_blank" class="work-card__cta">
+            <a href="https://tsukinowa-hp.pages.dev" target="_blank" rel="noopener noreferrer" class="work-card__link">
               サイトを確認する
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+              </svg>
             </a>
           </div>
         </article>
 
       </div>
 
-      <div class="works__more">
+      <div class="works__more fade-up">
         <a href="hp-support.html#works">
           HP制作ページで実績の詳細を見る
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+          </svg>
         </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== ABOUT ==================== -->
-  <section class="section about" id="about">
-    <div class="container about__inner">
-      <div class="about__text">
-        <div class="section__header section__header--left">
-          <p class="section__label">About</p>
-          <h2 class="section__title">デザインと<br>テクノロジーで伝える</h2>
-        </div>
-        <p class="about__lead">
-          ビジネスの価値を、正確に・美しく・伝わる形でWebに落とし込む。それが私の仕事です。
-        </p>
-        <p class="about__body">
-          企画からコピーライティング・デザイン・コーディング・公開後サポートまで一気通貫で対応。
-          さらにAI・DX導入支援により、業務効率化・自動化も実現。
-          業種を問わず、クライアントが持つ独自の強みを引き出す形でサポートします。
-        </p>
-        <div class="about__skills">
-          <div class="skill-item">
-            <span class="skill-item__icon">💻</span>
-            <div>
-              <p class="skill-item__title">フロントエンド開発</p>
-              <p class="skill-item__desc">HTML / CSS / JavaScript</p>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-item__icon">🎨</span>
-            <div>
-              <p class="skill-item__title">Webデザイン</p>
-              <p class="skill-item__desc">ブランドに合ったビジュアル設計</p>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-item__icon">🤖</span>
-            <div>
-              <p class="skill-item__title">AI・業務自動化</p>
-              <p class="skill-item__desc">ChatGPT活用 / ツール制作 / DX推進</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="about__visual">
-        <div class="about__card">
-          <p class="about__card-label">対応業種</p>
-          <ul class="about__card-list">
-            <li>飲食・カフェ・サービス業</li>
-            <li>医療・介護・福祉施設</li>
-            <li>士業・コンサルタント</li>
-            <li>スモールビジネス全般</li>
-            <li>個人事業主・フリーランス</li>
-          </ul>
-          <div class="about__card-divider"></div>
-          <p class="about__card-label">対応範囲</p>
-          <ul class="about__card-list">
-            <li>企画・設計</li>
-            <li>デザイン・コーディング</li>
-            <li>コピーライティング</li>
-            <li>AI・DX導入支援</li>
-            <li>公開後サポート</li>
-          </ul>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- ==================== CONTACT ==================== -->
   <section class="section contact" id="contact">
-    <div class="container contact__inner">
-      <div class="section__header">
-        <p class="section__label">Contact</p>
-        <h2 class="section__title">お気軽にご相談ください</h2>
-        <p class="section__desc">
-          「こんなサイトが欲しい」「AIを使いたいけど何から始めれば」<br>
-          そんな段階からでも大丈夫です。まずはお気軽にどうぞ。
-        </p>
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">お気軽にご相談ください</h2>
+        <p class="section-desc">「こんなサイトが欲しい」「AIを試したい」そんな段階からでも大丈夫です。</p>
       </div>
-      <div class="contact__actions">
-        <a href="https://coconala.com/services/4170805" target="_blank" class="btn btn--primary btn--lg">
-          ココナラで相談する
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-        </a>
+
+      <div class="contact__inner">
+
+        <div class="contact__info fade-up">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="ci-label">所在地</p>
+              <p class="ci-value">東京都（全国リモート対応可）</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <p class="ci-label">返信目安</p>
+              <p class="ci-value">1〜2営業日以内</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="ci-label">お電話</p>
+              <p class="ci-value">080-XXXX-XXXX（平日 10:00〜18:00）</p>
+            </div>
+          </div>
+
+          <div class="contact-sns">
+            <p class="ci-label">外部サービスからのご相談</p>
+            <a href="https://coconala.com/services/4170805" target="_blank" rel="noopener noreferrer" class="coconala-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              ココナラで相談する
+              <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact__form fade-up" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">お名前 <span class="required">*</span></label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="山田 太郎" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="company">会社名・屋号</label>
+              <input class="form-input" type="text" id="company" name="company" placeholder="株式会社〇〇" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">メールアドレス <span class="required">*</span></label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="service">ご相談内容</label>
+            <select class="form-input form-select" id="service" name="service">
+              <option value="">選択してください</option>
+              <option value="web">HP制作について</option>
+              <option value="ai">AI・DX導入支援について</option>
+              <option value="both">両方について</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">メッセージ <span class="required">*</span></label>
+            <textarea class="form-input form-textarea" id="message" name="message" placeholder="ご要望・ご質問などをご記入ください。まだ詳細が決まっていなくてもOKです。" required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="form-submit">
+            <span class="form-submit__text">送信する</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+          <p class="form-note">※ 送信後1〜2営業日以内にご返信いたします。</p>
+        </form>
+
       </div>
-      <p class="contact__note">※ ご要望のヒアリングから対応しています。まずはメッセージをお送りください。</p>
     </div>
   </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div>
-        <p class="footer__name">Kojima Yuya — Web Designer / Front-end Developer / AI Consultant</p>
-        <div class="footer__links">
-          <a href="index.html">Home</a>
-          <span>|</span>
-          <a href="hp-support.html">HP制作</a>
-          <span>|</span>
-          <a href="ai-support.html">DX・AI導入支援</a>
-        </div>
+      <div class="footer__left">
+        <a href="index.html" class="footer-logo">
+          <span class="logo__mark logo__mark--sm">KW</span>
+          <span class="footer-logo-name">Kojima Work</span>
+        </a>
+        <p class="footer__desc">Web Designer / Front-end Developer / AI Consultant</p>
       </div>
-      <p class="footer__copy">&copy; 2026 Kojima Yuya. All rights reserved.</p>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="hp-support.html">HP制作</a></li>
+          <li><a href="ai-support.html">AI導入支援</a></li>
+          <li><a href="#workflow">ご依頼の流れ</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="footer__copy">&copy; 2026 Kojima Work. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
